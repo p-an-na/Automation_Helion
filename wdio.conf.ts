@@ -1,4 +1,4 @@
-import type { Options } from '@wdio/types'
+const allure = require('allure-commandline')
 
 export const config: WebdriverIO.Config = {
     //
@@ -6,33 +6,6 @@ export const config: WebdriverIO.Config = {
     // Runner Configuration
     // ====================
     //
-    //
-    // =====================
-    // ts-node Configurations
-    // =====================
-    //
-    // You can write tests using TypeScript to get autocompletion and type safety.
-    // You will need typescript and ts-node installed as devDependencies.
-    // WebdriverIO will automatically detect if these dependencies are installed
-    // and will compile your config and tests for you.
-    // If you need to configure how ts-node runs please use the
-    // environment variables for ts-node or use wdio config's autoCompileOpts section.
-    //
-
-    autoCompileOpts: {
-        autoCompile: true,
-        // see https://github.com/TypeStrong/ts-node#cli-and-programmatic-options
-        // for all available options
-        tsNodeOpts: {
-            transpileOnly: true,
-            project: './tsconfig.json'
-        }
-        // tsconfig-paths is only used if "tsConfigPathsOpts" are provided, if you
-        // do please make sure "tsconfig-paths" is installed as dependency
-        // tsConfigPathsOpts: {
-        //     baseUrl: './'
-        // }
-    },
     //
     // ==================
     // Specify Test Files
@@ -59,17 +32,14 @@ export const config: WebdriverIO.Config = {
 
     suites: {
         debug: [
-            "./test/specs/e2e/SearchBar.ts",
-
+            "./test/specs/e2e/Product.ts"
         ],
 
         e2e: [
-            "./test/specs/e2e/SearchBar.ts",
+            "./test/specs/e2e/Searchbar.ts",
             "./test/specs/e2e/Product.ts"
         ]
     },
-    
-    
     //
     // ============
     // Capabilities
@@ -100,10 +70,9 @@ export const config: WebdriverIO.Config = {
         maxInstances: 1,
         //
         browserName: 'chrome',
-        "goog:chromeOptions": {
-            args: ["--headless"]
-
-        },
+        // "goog:chromeOptions": {
+        //     args: ["--headless"]
+        // },
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
@@ -157,7 +126,7 @@ export const config: WebdriverIO.Config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: ['chromedriver','devtools'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -179,7 +148,12 @@ export const config: WebdriverIO.Config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec', ['allure', {
+        //@ts-ignore
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
 
 
     
@@ -211,19 +185,10 @@ export const config: WebdriverIO.Config = {
      * @param  {String} cid      capability id (e.g 0-0)
      * @param  {[type]} caps     object containing capabilities for session that will be spawn in the worker
      * @param  {[type]} specs    specs to be run in the worker process
-     * @param  {[type]} args     object that will be merged with the main configuration once worker is initialized
+     * @param  {[type]} args     object that will be merged with the main configuration once worker is initialised
      * @param  {[type]} execArgv list of string arguments passed to the worker process
      */
     // onWorkerStart: function (cid, caps, specs, args, execArgv) {
-    // },
-    /**
-     * Gets executed just after a worker process has exited.
-     * @param  {String} cid      capability id (e.g 0-0)
-     * @param  {Number} exitCode 0 - success, 1 - fail
-     * @param  {[type]} specs    specs to be run in the worker process
-     * @param  {Number} retries  number of retries used
-     */
-    // onWorkerEnd: function (cid, exitCode, specs, retries) {
     // },
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
@@ -260,10 +225,9 @@ export const config: WebdriverIO.Config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-     beforeTest: function (test, context) {
+    beforeTest: function (test, context) {
         browser.maximizeWindow();
     },
-
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
@@ -296,6 +260,12 @@ export const config: WebdriverIO.Config = {
      */
     // afterSuite: function (suite) {
     // },
+
+    afterTest: function (test, scenario, { error, duration, passed }) {
+        if (error) {
+          browser.takeScreenshot();
+        }
+      },
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
@@ -330,13 +300,31 @@ export const config: WebdriverIO.Config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+     onComplete: function() {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results', '--clean'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                5000)
+
+            generation.on('exit', function(exitCode) {
+                clearTimeout(generationTimeout)
+
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
+
+                console.log('Allure report successfully generated')
+                resolve()
+            })
+        })
+    }
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session
     * @param {String} newSessionId session ID of the new session
     */
-    // onReload: function(oldSessionId, newSessionId) {
-    // }
+    //onReload: function(oldSessionId, newSessionId) {
+    //}
 }
