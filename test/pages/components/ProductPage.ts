@@ -12,8 +12,6 @@ class ProductPage {
     }
 
 
-
-
     async productTitleIsVisible() {
         const title:WebdriverIO.Element = await this.productTitle;
         await title.waitForDisplayed();

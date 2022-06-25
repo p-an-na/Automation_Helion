@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656095383734' stop='1656095389240'>
+    <name>blabla</name>
+    <title>blabla</title>
+    <test-cases>
+        <test-case start='1656095383735' status='failed' stop='1656095389235'>
+            <name>Should</name>
+            <title>Should</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Malformed type for "elementId" parameter of command elementClick
+                Expected: string
+                Actual: null
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-element-click
+                </message>
+                <stack-trace>Error: Malformed type for "elementId" parameter of command elementClick
+                Expected: string
+                Actual: null
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-element-click
+                
+                    at validate (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\node_modules\devtools\build\utils.js:52:19)
+                    at Element.wrappedCommand (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\node_modules\devtools\build\devtoolsdriver.js:98:49)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

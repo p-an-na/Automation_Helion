@@ -1,0 +1,112 @@
+{
+  "uid" : "99c84bad6a77962b",
+  "name" : "Should sort books by price and verify url",
+  "fullName" : "E2E - Books Page.Should sort books by price and verify url",
+  "historyId" : "39f510d7766ba955bb6a7b44ba260762",
+  "time" : {
+    "start" : 1656160085013,
+    "stop" : 1656160088670,
+    "duration" : 3657
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 6,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testClass",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should sort books by price and verify url"
+  }, {
+    "name" : "package",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a0220fa71514e7f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656159669693,
+        "stop" : 1656159673307,
+        "duration" : 3614
+      }
+    }, {
+      "uid" : "27bcd0fff5945452",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656158856676,
+        "stop" : 1656158859359,
+        "duration" : 2683
+      }
+    }, {
+      "uid" : "86307731a0aacc5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656158728562,
+        "stop" : 1656158732300,
+        "duration" : 3738
+      }
+    }, {
+      "uid" : "f514b721a6cd442a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656157575542,
+        "stop" : 1656157579088,
+        "duration" : 3546
+      }
+    }, {
+      "uid" : "3f48ed07fd611b34",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toContain(expected) // indexOf\n                \n                Expected value:  \"Cena\"\n                Received number: 0",
+      "time" : {
+        "start" : 1656157538535,
+        "stop" : 1656157540227,
+        "duration" : 1692
+      }
+    }, {
+      "uid" : "882f49584559efbb",
+      "status" : "broken",
+      "statusDetails" : "element (\".select2-container--open li:nth-child(3)\") still not displayed after 3000ms",
+      "time" : {
+        "start" : 1656157310717,
+        "stop" : 1656157314778,
+        "duration" : 4061
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99c84bad6a77962b.json",
+  "parameterValues" : [ "Chrome-103.0.5060.53" ]
+}

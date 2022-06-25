@@ -1,0 +1,60 @@
+{
+  "uid" : "29ff61263de86fdb",
+  "name" : "Should click on Books tab, and verify url",
+  "fullName" : "E2E - Books Page.Should click on Books tab, and verify url",
+  "historyId" : "268770ecea632d9f0b91d63c8988f896",
+  "time" : {
+    "start" : 1656092425847,
+    "stop" : 1656092429951,
+    "duration" : 4104
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testClass",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should click on Books tab, and verify url"
+  }, {
+    "name" : "package",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29ff61263de86fdb.json",
+  "parameterValues" : [ "Chrome-103.0.5060.53" ]
+}

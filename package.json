@@ -20,6 +20,7 @@
     "-": "^0.0.1",
     "@wdio/cli": "^7.20.2",
     "allure-commandline": "^2.17.2",
+    "devtools": "^7.20.4",
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {

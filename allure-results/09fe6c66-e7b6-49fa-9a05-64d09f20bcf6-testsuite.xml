@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656152934861' stop='1656152940378'>
+    <name>E2E - Books Page</name>
+    <title>E2E - Books Page</title>
+    <test-cases>
+        <test-case start='1656152934861' status='passed' stop='1656152939066'>
+            <name>Should click on Books tab, and verify url</name>
+            <title>Should click on Books tab, and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656152939067' status='passed' stop='1656152940376'>
+            <name>Should sort by price</name>
+            <title>Should sort by price</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

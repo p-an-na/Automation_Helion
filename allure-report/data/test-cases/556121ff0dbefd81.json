@@ -1,0 +1,62 @@
+{
+  "uid" : "556121ff0dbefd81",
+  "name" : "Should",
+  "fullName" : "blabla.Should",
+  "historyId" : "c30f5bd89ef2cf9caedde1d2c243af5c",
+  "time" : {
+    "start" : 1656093449810,
+    "stop" : 1656093464943,
+    "duration" : 15133
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect window to have url\n                \n                Expected: \"await expect(browser).toHaveUrl(expectedPageUrl)\"\n                Received: \"https://www.empik.com/\"",
+  "statusTrace" : "Error: Expect window to have url\n                \n                Expected: \"await expect(browser).toHaveUrl(expectedPageUrl)\"\n                Received: \"https://www.empik.com/\"\n                    at C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\test\\specs\\e2e\\Test.ts:4:31\n                    at step (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\test\\specs\\e2e\\Test.ts:32:23)\n                    at Object.next (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\test\\specs\\e2e\\Test.ts:13:53)\n                    at fulfilled (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\test\\specs\\e2e\\Test.ts:4:58)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "blabla"
+  }, {
+    "name" : "testClass",
+    "value" : "blabla"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should"
+  }, {
+    "name" : "package",
+    "value" : "blabla"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "556121ff0dbefd81.json",
+  "parameterValues" : [ "Chrome-103.0.5060.53" ]
+}

@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656158723947' stop='1656158732347'>
+    <name>E2E - Books Page</name>
+    <title>E2E - Books Page</title>
+    <test-cases>
+        <test-case start='1656158723948' status='passed' stop='1656158728561'>
+            <name>Should click on Books tab, and verify url</name>
+            <title>Should click on Books tab, and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656158728562' status='passed' stop='1656158732300'>
+            <name>Should sort books by price and verify url</name>
+            <title>Should sort books by price and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656158732301' status='failed' stop='1656158732346'>
+            <name>Should verify if sort by price is correct</name>
+            <title>Should verify if sort by price is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expect(received).toBeGreaterThanOrEqual(expected)
+                
+                Matcher error: received value must be a number or bigint
+                
+                Received has type:  object
+                Received has value: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "ELEMENT-6", "elementId": "ELEMENT-6", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"browserName": "Chrome", "browserVersion": "103.0.5060.53", "goog:chromeOptions": {"debuggerAddress": "localhost:62435"}, "platformName": "win32", "platformVersion": "10.0.19043"}, "config": {"$0": "node_modules\\@wdio\\cli\\bin\\wdio.js", "_": ["wdio.conf.ts"], "after": [], "afterCommand": [], "afterFeature": [], "afterHook": [], "afterScenario": [], "afterSession": [], "afterStep": [], "afterSuite": [], "afterTest": [[Function bound afterTest]], "autoCompileOpts": {"autoCompile": true, "babelOpts": {}, "tsNodeOpts": {"transpileOnly": true}}, "bail": 0, "baseUrl": "https://helion.pl", "before": [], "beforeCommand": [], "beforeFeature": [], "beforeHook": [], "beforeScenario": [], "beforeSession": [], "beforeStep": [], "beforeSuite": [], "beforeTest": [[Function bound beforeTest]], "connectionRetryCount": 3, "connectionRetryTimeout": 120000, "cucumberFeaturesWithLineNumbers": [], "cucumberOpts": {"timeout": 10000}, "exclude": [], "excludeDriverLogs": [], "execArgv": [], "filesToWatch": [], "framework": "mocha", "ignoredWorkerServices": [], "jasmineOpts": {"defaultTimeoutInterval": 10000}, "logLevel": "error", "logLevels": {}, "maxInstances": 1, "maxInstancesPerCapability": 100, "mochaOpts": {"timeout": 60000, "ui": "bdd"}, "onComplete": [[Function bound onComplete]], "onPrepare": [], "onReload": [], "onWorkerEnd": [], "onWorkerStart": [], "outputDir": undefined, "reporterSyncInterval": 100, "reporterSyncTimeout": 5000, "reporters": ["spec", ["allure", {"disableWebdriverScreenshotsReporting": false, "disableWebdriverStepsReporting": true, "outputDir": "allure-results"}]], "runner": "local", "runnerEnv": {}, "services": ["chromedriver", "devtools"], "specFileRetries": 0, "specFileRetriesDeferred": false, "specFileRetriesDelay": 0, "specs": ["./test/specs/**/*.ts"], "suite": ["debug"], "suites": {"debug": ["./test/specs/e2e/Books.ts"], "e2e": ["./test/specs/e2e/Searchbar.ts", "./test/specs/e2e/Product.ts"]}, "waitforInterval": 500, "waitforTimeout": 10000}, "overwriteCommand": [Function anonymous], "sessionId": "1e031878-41ce-48b5-b6a8-f329d0db7133"}, "selector": "#wivipp > a > ins > span", "sessionId": "1e031878-41ce-48b5-b6a8-f329d0db7133"}</message>
+                <stack-trace>Error: expect(received).toBeGreaterThanOrEqual(expected)
+                
+                Matcher error: received value must be a number or bigint
+                
+                Received has type:  object
+                Received has value: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "ELEMENT-6", "elementId": "ELEMENT-6", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"browserName": "Chrome", "browserVersion": "103.0.5060.53", "goog:chromeOptions": {"debuggerAddress": "localhost:62435"}, "platformName": "win32", "platformVersion": "10.0.19043"}, "config": {"$0": "node_modules\\@wdio\\cli\\bin\\wdio.js", "_": ["wdio.conf.ts"], "after": [], "afterCommand": [], "afterFeature": [], "afterHook": [], "afterScenario": [], "afterSession": [], "afterStep": [], "afterSuite": [], "afterTest": [[Function bound afterTest]], "autoCompileOpts": {"autoCompile": true, "babelOpts": {}, "tsNodeOpts": {"transpileOnly": true}}, "bail": 0, "baseUrl": "https://helion.pl", "before": [], "beforeCommand": [], "beforeFeature": [], "beforeHook": [], "beforeScenario": [], "beforeSession": [], "beforeStep": [], "beforeSuite": [], "beforeTest": [[Function bound beforeTest]], "connectionRetryCount": 3, "connectionRetryTimeout": 120000, "cucumberFeaturesWithLineNumbers": [], "cucumberOpts": {"timeout": 10000}, "exclude": [], "excludeDriverLogs": [], "execArgv": [], "filesToWatch": [], "framework": "mocha", "ignoredWorkerServices": [], "jasmineOpts": {"defaultTimeoutInterval": 10000}, "logLevel": "error", "logLevels": {}, "maxInstances": 1, "maxInstancesPerCapability": 100, "mochaOpts": {"timeout": 60000, "ui": "bdd"}, "onComplete": [[Function bound onComplete]], "onPrepare": [], "onReload": [], "onWorkerEnd": [], "onWorkerStart": [], "outputDir": undefined, "reporterSyncInterval": 100, "reporterSyncTimeout": 5000, "reporters": ["spec", ["allure", {"disableWebdriverScreenshotsReporting": false, "disableWebdriverStepsReporting": true, "outputDir": "allure-results"}]], "runner": "local", "runnerEnv": {}, "services": ["chromedriver", "devtools"], "specFileRetries": 0, "specFileRetriesDeferred": false, "specFileRetriesDelay": 0, "specs": ["./test/specs/**/*.ts"], "suite": ["debug"], "suites": {"debug": ["./test/specs/e2e/Books.ts"], "e2e": ["./test/specs/e2e/Searchbar.ts", "./test/specs/e2e/Product.ts"]}, "waitforInterval": 500, "waitforTimeout": 10000}, "overwriteCommand": [Function anonymous], "sessionId": "1e031878-41ce-48b5-b6a8-f329d0db7133"}, "selector": "#wivipp > a > ins > span", "sessionId": "1e031878-41ce-48b5-b6a8-f329d0db7133"}
+                    at BooksPage.&lt;anonymous> (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\test\pages\components\BooksPage.ts:51:30)
+                    at step (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\test\pages\components\BooksPage.ts:33:23)
+                    at Object.next (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\test\pages\components\BooksPage.ts:14:53)
+                    at fulfilled (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\test\pages\components\BooksPage.ts:5:58)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

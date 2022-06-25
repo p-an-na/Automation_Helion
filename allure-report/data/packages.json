@@ -1,0 +1,204 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "E2E - Products",
+    "children" : [ {
+      "name" : "Should type search phrase and click search icon",
+      "uid" : "7d9427c200a4d9b0",
+      "parentUid" : "24db069e698639c352f051e2b9fb91e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084518390,
+        "stop" : 1656084523933,
+        "duration" : 5543
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should click on first book",
+      "uid" : "16533e47c4c18817",
+      "parentUid" : "24db069e698639c352f051e2b9fb91e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084523935,
+        "stop" : 1656084529096,
+        "duration" : 5161
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should click on add to cart button",
+      "uid" : "472b63af55d10dfd",
+      "parentUid" : "24db069e698639c352f051e2b9fb91e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084529097,
+        "stop" : 1656084531550,
+        "duration" : 2453
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should delete product form cart",
+      "uid" : "b7d7306f10b6371c",
+      "parentUid" : "24db069e698639c352f051e2b9fb91e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084531551,
+        "stop" : 1656084533911,
+        "duration" : 2360
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    } ],
+    "uid" : "24db069e698639c352f051e2b9fb91e4"
+  }, {
+    "name" : "E2E - Books Page",
+    "children" : [ {
+      "name" : "Should click on Sort by, select Sort by price and verify if sorting is correct",
+      "uid" : "3c8641cbecd9cf73",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1656091714342,
+        "stop" : 1656091715460,
+        "duration" : 1118
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 22,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Filtr wydawnictwo, klika w ksiazke pierwsza sprawdza wydawnictwo",
+      "uid" : "5a9daf69abd44ce7",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1656143779239,
+        "stop" : 1656143790776,
+        "duration" : 11537
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 15,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should sort by price",
+      "uid" : "c5ac5d90318680b0",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656156191732,
+        "stop" : 1656156193187,
+        "duration" : 1455
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 18,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should click on Books tab, and verify url",
+      "uid" : "2fc99fd4f3e02595",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656160080098,
+        "stop" : 1656160085013,
+        "duration" : 4915
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 65,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should sort books by price and verify url",
+      "uid" : "99c84bad6a77962b",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656160085013,
+        "stop" : 1656160088670,
+        "duration" : 3657
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 6,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    }, {
+      "name" : "Should verify if sort by price is correct",
+      "uid" : "d753bfe1ba3ee095",
+      "parentUid" : "2f60e40f11feca774f1c390a828191f3",
+      "status" : "failed",
+      "time" : {
+        "start" : 1656160088670,
+        "stop" : 1656160088758,
+        "duration" : 88
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    } ],
+    "uid" : "2f60e40f11feca774f1c390a828191f3"
+  }, {
+    "name" : "blabla",
+    "children" : [ {
+      "name" : "Should",
+      "uid" : "a196493c94fb7613",
+      "parentUid" : "563ca4734efa66fdc0c5676065ddd294",
+      "status" : "broken",
+      "time" : {
+        "start" : 1656142102360,
+        "stop" : 1656142119297,
+        "duration" : 16937
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 11,
+      "retriesStatusChange" : true,
+      "parameters" : [ "Chrome-103.0.5060.53" ]
+    } ],
+    "uid" : "563ca4734efa66fdc0c5676065ddd294"
+  } ]
+}

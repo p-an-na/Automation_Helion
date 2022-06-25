@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656150608030' stop='1656150625475'>
+    <name>E2E - Books Page</name>
+    <title>E2E - Books Page</title>
+    <test-cases>
+        <test-case start='1656150608031' status='passed' stop='1656150613914'>
+            <name>Should click on Books tab, and verify url</name>
+            <title>Should click on Books tab, and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656150613915' status='broken' stop='1656150625462'>
+            <name>Should sort by price</name>
+            <title>Should sort by price</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "li" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "li" because element wasn't found
+                    at implicitWait (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

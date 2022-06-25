@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656092425847' stop='1656092441058'>
+    <name>E2E - Books Page</name>
+    <title>E2E - Books Page</title>
+    <test-cases>
+        <test-case start='1656092425847' status='passed' stop='1656092429951'>
+            <name>Should click on Books tab, and verify url</name>
+            <title>Should click on Books tab, and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656092429953' status='broken' stop='1656092441042'>
+            <name>Filtr wydawnictwo, klika w ksiazke pierwsza sprawdza wydawnictwo</name>
+            <title>Filtr wydawnictwo, klika w ksiazke pierwsza sprawdza wydawnictwo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call scrollIntoView on element with selector "#select2-9zkd-container" because element wasn't found</message>
+                <stack-trace>Error: Can't call scrollIntoView on element with selector "#select2-9zkd-container" because element wasn't found
+                    at implicitWait (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,62 @@
+{
+  "uid" : "44ff3120993db22c",
+  "name" : "Should",
+  "fullName" : "blabla.Should",
+  "historyId" : "c30f5bd89ef2cf9caedde1d2c243af5c",
+  "time" : {
+    "start" : 1656095119935,
+    "stop" : 1656095135468,
+    "duration" : 15533
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call selectByAttribute on element with selector \"div.ta-cs-dropdown\" because element wasn't found",
+  "statusTrace" : "Error: Can't call selectByAttribute on element with selector \"div.ta-cs-dropdown\" because element wasn't found\n                    at implicitWait (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:34:19)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\node_modules\\webdriverio\\build\\middlewares.js:20:29)\n                    at async Element.wrapCommandFn (C:\\Users\\anpie\\Desktop\\Programowanie\\WebdriverIO\\Automation_Helion\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "blabla"
+  }, {
+    "name" : "testClass",
+    "value" : "blabla"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should"
+  }, {
+    "name" : "package",
+    "value" : "blabla"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "44ff3120993db22c.json",
+  "parameterValues" : [ "Chrome-103.0.5060.53" ]
+}

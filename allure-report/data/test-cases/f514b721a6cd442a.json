@@ -1,0 +1,60 @@
+{
+  "uid" : "f514b721a6cd442a",
+  "name" : "Should sort books by price and verify url",
+  "fullName" : "E2E - Books Page.Should sort books by price and verify url",
+  "historyId" : "39f510d7766ba955bb6a7b44ba260762",
+  "time" : {
+    "start" : 1656157575542,
+    "stop" : 1656157579088,
+    "duration" : 3546
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testClass",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should sort books by price and verify url"
+  }, {
+    "name" : "package",
+    "value" : "E2E - Books Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f514b721a6cd442a.json",
+  "parameterValues" : [ "Chrome-103.0.5060.53" ]
+}

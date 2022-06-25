@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656157305027' stop='1656157314790'>
+    <name>E2E - Books Page</name>
+    <title>E2E - Books Page</title>
+    <test-cases>
+        <test-case start='1656157305027' status='passed' stop='1656157310716'>
+            <name>Should click on Books tab, and verify url</name>
+            <title>Should click on Books tab, and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1656157310717' status='broken' stop='1656157314778'>
+            <name>Should sort books by price and verify url</name>
+            <title>Should sort books by price and verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element (".select2-container--open li:nth-child(3)") still not displayed after 3000ms</message>
+                <stack-trace>Error: element (".select2-container--open li:nth-child(3)") still not displayed after 3000ms
+                    at C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\anpie\Desktop\Programowanie\WebdriverIO\Automation_Helion\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

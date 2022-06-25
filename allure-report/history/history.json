@@ -1,0 +1,215 @@
+{
+  "fdd980a98c40ba5748ee8466c923bf86" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "472b63af55d10dfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084529097,
+        "stop" : 1656084531550,
+        "duration" : 2453
+      }
+    } ]
+  },
+  "2513e036500a74cd776610bc88604487" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d753bfe1ba3ee095",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toBeGreaterThanOrEqual(expected)\n                \n                Expected: >= NaN\n                Received:    NaN",
+      "time" : {
+        "start" : 1656160088670,
+        "stop" : 1656160088758,
+        "duration" : 88
+      }
+    } ]
+  },
+  "9c593245f9245945a7885bb3aeafeaad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c8641cbecd9cf73",
+      "status" : "broken",
+      "statusDetails" : "Select element doesn't contain any option element",
+      "time" : {
+        "start" : 1656091714342,
+        "stop" : 1656091715460,
+        "duration" : 1118
+      }
+    } ]
+  },
+  "268770ecea632d9f0b91d63c8988f896" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2fc99fd4f3e02595",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656160080098,
+        "stop" : 1656160085013,
+        "duration" : 4915
+      }
+    } ]
+  },
+  "c30f5bd89ef2cf9caedde1d2c243af5c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a196493c94fb7613",
+      "status" : "broken",
+      "statusDetails" : "Can't call selectByAttribute on element with selector \"ta-cs-dropdown\" because element wasn't found",
+      "time" : {
+        "start" : 1656142102360,
+        "stop" : 1656142119297,
+        "duration" : 16937
+      }
+    } ]
+  },
+  "39f510d7766ba955bb6a7b44ba260762" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "99c84bad6a77962b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656160085013,
+        "stop" : 1656160088670,
+        "duration" : 3657
+      }
+    } ]
+  },
+  "53899f0bc0dc03a6259356a6d8fbda11" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a9daf69abd44ce7",
+      "status" : "broken",
+      "statusDetails" : "element (\"#div.select-line  #selectSort\") still not displayed after 10000ms",
+      "time" : {
+        "start" : 1656143779239,
+        "stop" : 1656143790776,
+        "duration" : 11537
+      }
+    } ]
+  },
+  "3c684bafef71bb3aaacad6e1fda0f9cc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c5ac5d90318680b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656156191732,
+        "stop" : 1656156193187,
+        "duration" : 1455
+      }
+    } ]
+  },
+  "731bdb39e6b879d644edc85be4e8e6da" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16533e47c4c18817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084523935,
+        "stop" : 1656084529096,
+        "duration" : 5161
+      }
+    } ]
+  },
+  "9ea40f472c319c08e77a61510aea63fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d9427c200a4d9b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084518390,
+        "stop" : 1656084523933,
+        "duration" : 5543
+      }
+    } ]
+  },
+  "9fe3f4d84cf799b069aad363b8b2642" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7d7306f10b6371c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656084531551,
+        "stop" : 1656084533911,
+        "duration" : 2360
+      }
+    } ]
+  }
+}
